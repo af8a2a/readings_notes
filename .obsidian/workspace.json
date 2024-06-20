@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readme.md",
+                "file": "Notes/PBR.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,8 +48,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
+                "query": "tag:#重要性采样",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "readme.md",
+                "file": "Notes/PBR.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "readme.md",
+                "file": "Notes/PBR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "readme.md"
+                "file": "Notes/PBR.md"
               }
             }
           }
@@ -149,8 +150,15 @@
   },
   "active": "8f9326db8043983a",
   "lastOpenFiles": [
-    "asset/book/RTR4-CN.pdf",
+    "Notes/抗锯齿.md",
+    "Notes/PBR.md",
+    "Notes/延迟渲染.md",
+    "Notes/readme.md",
     "readme.md",
+    "Notes/img",
+    "NoteMenu.md",
+    "Notes",
+    "asset/book/RTR4-CN.pdf",
     "asset/book",
     "asset",
     "[The-Art-of-Linear-Algebra/README-zh-CN.md",
