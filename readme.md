@@ -17,4 +17,4 @@
 - Rust
 	- 🔗 [关于本书 - Rust语言圣经(Rust Course)](https://course.rs/about-book.html)
 	- 🔗 [af8a2a/PiggySQL: Toy SQL database in Rust,written as a learning project (github.com)](https://github.com/af8a2a/PiggySQL)
-	- 🔗 [我的毕设](obsidian://open?vault=readings&file=Notes%2FTour%20of%20Rust)
+	- 🔗 [我的毕设](/Notes/我的毕设与Rust.md)
