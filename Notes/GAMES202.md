@@ -71,3 +71,7 @@ float PCF(sampler2D shadowMap, vec4 coords, float penumbraSize) {
 1滤波半径的PCF阴影:
 ![](https://s3.bmp.ovh/imgs/2024/06/22/54a8744526119e4d.png)
 
+
+[hw1代码仓库]([af8a2a/games202_hw1 (github.com)](https://github.com/af8a2a/games202_hw1))
+
+
