@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/GAMES202.md",
+                "file": "Notes/延迟渲染.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/GAMES202.md",
+                "file": "Notes/延迟渲染.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/GAMES202.md",
+                "file": "Notes/延迟渲染.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/GAMES202.md"
+                "file": "Notes/延迟渲染.md"
               }
             }
           }
@@ -134,7 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 243.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,16 +149,16 @@
   },
   "active": "a258da1f4d23ac49",
   "lastOpenFiles": [
-    "Notes/Shader相关杂项.md",
-    "Notes/readme.md",
-    "Notes/PBR.md",
     "Notes/GAMES202.md",
+    "Notes/PBR.md",
     "Notes/阴影.md",
     "Notes/延迟渲染.md",
     "Notes/我的毕设与Rust.md",
-    "readme.md",
     "Notes/深度测试.md",
+    "Notes/readme.md",
     "Notes/抗锯齿.md",
+    "Notes/Shader相关杂项.md",
+    "readme.md",
     "asset/book/RTR4-CN.pdf",
     "NoteMenu.md",
     "Excalidraw/Drawing 2024-06-21 14.09.15.excalidraw.md",

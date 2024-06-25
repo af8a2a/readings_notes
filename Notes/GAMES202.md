@@ -263,3 +263,253 @@ Color3f Color3f::toSRGB() const {
 结果图：
 ![](https://s3.bmp.ovh/imgs/2024/06/24/7976d65491d51c14.png)
 ![](https://s3.bmp.ovh/imgs/2024/06/24/7c4865cced0b7e5a.png)
+
+
+# hw3
+
+## CheckPoint:DirectionLight
+传入世界空间下的wi,wo，计算漫反射项。
+根据uv获取屏幕空间下的albedo,normal信息，计算BSDF
+```glsl
+vec3 EvalDiffuse(vec3 wi, vec3 wo, vec2 uv) {
+    vec3 albedo = GetGBufferDiffuse(uv);
+
+    vec3 normal = GetGBufferNormalWorld(uv);
+
+    float cos = max(0.0, dot(wi, normal));
+
+    return albedo * cos * INV_PI;
+
+}
+```
+
+根据uv计算辐照度 
+```glsl
+vec3 EvalDirectionalLight(vec2 uv) {
+
+    vec3 Le = GetGBufferuShadow(uv) * uLightRadiance;
+
+    return Le;
+
+}
+```
+
+## CheckPoint:SSR
+首先实现RayMarch，世界空间下投射光线，并模拟步进，用步进后光线的深度对比光线所在的屏幕坐标的场景物体深度，若光线深度大于场景物体深度，则相交
+```glsl
+bool RayMarch(vec3 ori, vec3 dir, out vec3 hitPos) {
+
+    float step = 0.05;
+
+    const int totalStepTimes = 150;
+
+    vec3 stepDir = normalize(dir) * step;
+
+    vec3 curPos = ori;
+
+    for(int curStepTimes = 0; curStepTimes < totalStepTimes; curStepTimes++) {
+
+        vec2 uv = GetScreenCoordinate(curPos);
+
+        float depth = GetDepth(curPos);
+
+        float gbuffer_depth = GetGBufferDepth(uv);
+
+        if(depth - gbuffer_depth > 0.0001) {
+
+            hitPos = curPos;
+
+            return true;
+
+        }
+
+        curPos += stepDir;
+
+    }
+
+    return false;
+
+}
+```
+加入间接光照后的代码
+```glsl
+void main() {
+
+    float s = InitRand(gl_FragCoord.xy);
+
+  
+
+    vec3 L = vec3(0.0);
+
+    vec3 wi = normalize(uLightDir);
+
+    vec3 wo = normalize(uCameraPos - vPosWorld.xyz);
+
+  
+
+    vec2 screenUV = GetScreenCoordinate(vPosWorld.xyz);
+
+    L = EvalDiffuse(wi, wo, screenUV) * EvalDirectionalLight(screenUV);
+
+    // vec3 color = pow(clamp(L, vec3(0.0), vec3(1.0)), vec3(1.0 / 2.2));
+
+    vec3 L_ind = vec3(0.0);
+
+  
+
+    for(int i = 0; i < SAMPLE_NUM; i++) {
+
+        float pdf;
+
+        vec3 localDir = SampleHemisphereCos(s, pdf);
+
+        vec3 normal = GetGBufferNormalWorld(screenUV);
+
+        vec3 b1, b2;
+
+        LocalBasis(normal, b1, b2);
+
+        vec3 dir = normalize(mat3(b1, b2, normal) * localDir);
+
+        vec3 position_1;
+
+        if(RayMarch(vPosWorld.xyz, dir, position_1)) {
+
+            vec2 hitScreenUV = GetScreenCoordinate(position_1);
+
+            L_ind += EvalDiffuse(dir, wo, screenUV) / pdf * EvalDiffuse(wi, dir, hitScreenUV) * EvalDirectionalLight(hitScreenUV);
+
+        }
+
+  
+
+    }
+
+    L_ind /= float(SAMPLE_NUM);
+
+    L = L + L_ind;
+
+    vec3 color = pow(clamp(L, vec3(0.0), vec3(1.0)), vec3(1.0 / 2.2));
+
+  
+
+    gl_FragColor = vec4(vec3(color.rgb), 1.0);
+
+}
+```
+
+
+# hw4
+## CheckPoint:预计算
+在lut-gen中预计算下列积分并输出图片
+
+$$
+E_{\mu_{0}} = \int_{0}^{2\pi} \int_{0}^{1} f_{r}(\mu_o,\mu_i, \phi) \mu_i d\mu_i d\phi
+$$
+$$
+E_{avg} = 2 \int_{0}^{1} E(\mu) d\mu
+$$
+
+蒙特卡洛计算Emu,Eavg
+```cpp
+//Emu
+Vec3f IntegrateBRDF(Vec3f V, float roughness, float NdotV) {
+    float A = 0.0;
+    float B = 0.0;
+    float C = 0.0;
+    const int sample_count = 1024;
+    Vec3f N = Vec3f(0.0, 0.0, 1.0);
+    normalize(V);
+    samplePoints sampleList = squareToCosineHemisphere(sample_count);
+    for (int i = 0; i < sample_count; i++) {
+      // TODO: To calculate (fr * ni) / p_o here
+        Vec3f L = normalize(sampleList.directions[i]);
+        float pdf = sampleList.PDFs[i];
+
+        float NdotL=std::max(dot(N,L),0.0f);
+        Vec3f H=normalize((V+L));
+
+        float NDF= DistributionGGX(N,H,roughness);
+        float F= 1.0f;
+        float G= GeometrySmith(roughness,NdotV, NdotL);
+
+        float denom=4*NdotV*NdotL;
+        float result=NDF*F*G/denom/pdf*NdotL;
+        A=B=C+=result;
+    }
+
+    return {A / sample_count, B / sample_count, C / sample_count};
+}
+//Eavg
+Vec3f IntegrateEmu(Vec3f V, float roughness, float NdotV, Vec3f Ei) {  
+	return Ei * NdotV * 2.0f;  
+}
+```
+
+## Bouns:使用重要性采样
+```cpp
+Vec3f ImportanceSampleGGX(Vec2f Xi, Vec3f N, float roughness) {  
+float a = roughness * roughness;  
+  
+// in spherical space - Bonus 1  
+  
+float phi = 2.0 * PI * Xi.x;  
+float cosTheta = sqrt((1.0 - Xi.y) / (1.0 + (a*a - 1.0) * Xi.y));  
+float sinTheta = sqrt(1.0 - cosTheta*cosTheta);  
+  
+  
+// from spherical space to cartesian space - Bonus 1  
+Vec3f H;  
+H.x = cos(phi) * sinTheta;  
+H.y = sin(phi) * sinTheta;  
+H.z = cosTheta;  
+  
+  
+// tangent coordinates - Bonus 1  
+  
+Vec3f up = abs(N.z) < 0.999 ? Vec3f(0.0, 0.0, 1.0) : Vec3f(1.0, 0.0, 0.0);  
+Vec3f tangent = normalize(cross(up, N));  
+Vec3f bitangent = cross(N, tangent);  
+  
+// transform H to tangent space - Bonus 1  
+  
+Vec3f sampleVec = tangent * H.x + bitangent * H.y + N * H.z;  
+return normalize(sampleVec);  
+}
+```
+
+## Checkpoint:实时渲染端
+```glsl
+vec3 MultiScatterBRDF(float NdotL, float NdotV) {
+
+    vec3 albedo = pow(texture2D(uAlbedoMap, vTextureCoord).rgb, vec3(2.2));
+
+  
+
+    vec3 E_o = texture2D(uBRDFLut, vec2(NdotL, uRoughness)).xyz;
+
+    vec3 E_i = texture2D(uBRDFLut, vec2(NdotV, uRoughness)).xyz;
+
+  
+
+    vec3 E_avg = texture2D(uEavgLut, vec2(0, uRoughness)).xyz;
+
+  // copper
+
+    vec3 edgetint = vec3(0.827, 0.792, 0.678);
+
+    vec3 F_avg = AverageFresnel(albedo, edgetint);
+
+  
+
+  // TODO: To calculate fms and missing energy here
+
+    vec3 F_ms = (1.0 - E_o) * (1.0 - E_i) / (PI * (1.0 - E_avg));
+
+    vec3 F_add = F_avg * E_avg / (1.0 - F_avg * (1.0 - E_avg));
+
+    return F_add * F_ms;
+
+}
+```
+
