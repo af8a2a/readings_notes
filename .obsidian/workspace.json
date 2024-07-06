@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/不正经游戏截帧分析.md",
+                "file": "readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/不正经游戏截帧分析.md",
+                "file": "readme.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/不正经游戏截帧分析.md",
+                "file": "readme.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/不正经游戏截帧分析.md"
+                "file": "readme.md"
               }
             }
           }
@@ -147,12 +147,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6153809987657ac8",
+  "active": "b561a29aa51026c6",
   "lastOpenFiles": [
+    "NoteMenu.md",
+    "Excalidraw/Drawing 2024-06-21 14.09.15.excalidraw.md",
+    "Notes/img/BloomDownsample.png",
+    "Notes/不正经游戏截帧分析.md",
     "Notes/Shader相关杂项.md",
     "Notes/img/BloomPost.png",
     "readme.md",
-    "Notes/不正经游戏截帧分析.md",
     "Notes/抗锯齿.md",
     "Notes/img/Renderpass.png",
     "Notes/Forward Plus Render(todo).md",
@@ -160,7 +163,6 @@
     "Notes/readme.md",
     "Notes/img/BloomUpsamle.png",
     "Notes/img/BloomPass.png",
-    "Notes/img/BloomDownsample.png",
     "Notes/PBR.md",
     "Notes/我的毕设与Rust.md",
     "Notes/延迟渲染.md",
@@ -172,8 +174,6 @@
     "Notes/深度测试.md",
     "Notes/阴影.md",
     "asset/book/RTR4-CN.pdf",
-    "NoteMenu.md",
-    "Excalidraw/Drawing 2024-06-21 14.09.15.excalidraw.md",
     "Excalidraw",
     "Excalidraw/Drawing 2024-06-21 10.59.16.excalidraw.md",
     "Notes/img",
