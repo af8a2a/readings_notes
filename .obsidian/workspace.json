@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Leetcode in Rust.md",
+                "file": "Notes/不正经游戏截帧分析.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 246.5
   },
   "right": {
     "id": "a16a1f9d7268f6f3",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Leetcode in Rust.md",
+                "file": "Notes/不正经游戏截帧分析.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,9 +102,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Leetcode in Rust.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "file": "Notes/不正经游戏截帧分析.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Leetcode in Rust.md"
+                "file": "Notes/不正经游戏截帧分析.md"
               }
             }
           }
@@ -147,26 +147,34 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b561a29aa51026c6",
+  "active": "6153809987657ac8",
   "lastOpenFiles": [
-    "Notes/抗锯齿.md",
-    "Notes/Leetcode in Rust.md",
-    "Notes/深度测试.md",
-    "Notes/我的毕设与Rust.md",
-    "Notes/GPU与Shader.md",
-    "Notes/PBR.md",
-    "Notes/readme.md",
     "Notes/Shader相关杂项.md",
-    "Notes/GAMES202.md",
-    "Notes/Forward Plus Render(todo).md",
-    "Notes/阴影.md",
-    "Notes/延迟渲染.md",
+    "Notes/img/BloomPost.png",
     "readme.md",
+    "Notes/不正经游戏截帧分析.md",
+    "Notes/抗锯齿.md",
+    "Notes/img/Renderpass.png",
+    "Notes/Forward Plus Render(todo).md",
+    "Notes/GPU与Shader.md",
+    "Notes/readme.md",
+    "Notes/img/BloomUpsamle.png",
+    "Notes/img/BloomPass.png",
+    "Notes/img/BloomDownsample.png",
+    "Notes/PBR.md",
+    "Notes/我的毕设与Rust.md",
+    "Notes/延迟渲染.md",
+    "Notes/Leetcode in Rust.md",
+    "Notes/GAMES202.md",
+    "Notes/img/char.png",
+    "Notes/img/lit.png",
+    "Notes/img/pass1.png",
+    "Notes/深度测试.md",
+    "Notes/阴影.md",
     "asset/book/RTR4-CN.pdf",
     "NoteMenu.md",
     "Excalidraw/Drawing 2024-06-21 14.09.15.excalidraw.md",
     "Excalidraw",
-    "Notes/img/未命名.md",
     "Excalidraw/Drawing 2024-06-21 10.59.16.excalidraw.md",
     "Notes/img",
     "Notes",
