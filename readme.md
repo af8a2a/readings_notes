@@ -7,16 +7,21 @@
 - Math
 	- 📖 [Linear Math](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra/blob/main/README-zh-CN.md)
 - Rendering
-	- 📖 [Real Time Rendering](https://github.com/Morakito/Real-Time-Rendering-4th-CN?tab=readme-ov-file)
+	- 📖 [Real Time Rendering4](https://github.com/Morakito/Real-Time-Rendering-4th-CN?tab=readme-ov-file)
 	- 📖 [Percentage-Closer Soft Shadows (nvidia.com)](https://developer.download.nvidia.com/shaderlibrary/docs/shadow_PCSS.pdf)
 	- 🔗 [Ray Tracing in One Weekend Series](https://raytracing.github.io/)
-	- 🔗 [百人计划-渲染教程框架目录 (qq.com)](https://docs.qq.com/doc/DUFdKZE1oVFd3ZlBs)
-	- 🔗 [百人计划-卡通角色渲染分享 (qq.com)](https://docs.qq.com/slide/DUUFvRUxkSUN0Wm5P?u=38b88cc393ca40e581ff6754fbee0ea8)
-	- 📖 [GAMES202: 高质量实时渲染 (ucsb.edu)](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)
-	- 🔗 [百人计划-水体渲染 (qq.com)](https://docs.qq.com/slide/DUWZaempMenVLbFph?u=595fa66de7d741d98dc3f0e42c829477)
+	- 🔗 [百人计划-渲染教程框架目录](https://docs.qq.com/doc/DUFdKZE1oVFd3ZlBs)
+	- 🔗 [百人计划-卡通角色渲染分享](https://docs.qq.com/slide/DUUFvRUxkSUN0Wm5P?u=38b88cc393ca40e581ff6754fbee0ea8)
+	- 📖 [GAMES202: 高质量实时渲染)](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html)
+	- 🔗 [百人计划-水体渲染](https://docs.qq.com/slide/DUWZaempMenVLbFph?u=595fa66de7d741d98dc3f0e42c829477)
+	- 📖 [Physically Based Rendering: From Theory to Implementation](https://pbr-book.org/4ed/contents)
+	- 📖 [GPU Gem](https://developer.nvidia.com/gpugems/gpugems/contributors)
 - Graphics API
 	- 🔗 [LearnOpenGL CN](https://learnopengl-cn.github.io/)
 	- 🔗 [Vulkan tutorial](https://vulkan-tutorial.com/)
+- Tool
+	- [Fractions Calculator (rapidtables.com)](https://www.rapidtables.com/calc/math/fractions-calculator.html)
+	- [An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/README.html)
 - Repositories
 	- 🔗 [SaschaWillems/Vulkan: C++ examples for the Vulkan graphics API (github.com)](https://github.com/SaschaWillems/Vulkan)
 	- 🔗 [Romantoscalion/Technical_Artist_Technotes: 个人的技术美术相关知识的学习笔记库 (github.com)](https://github.com/Romantoscalion/Technical_Artist_Technotes)
@@ -29,3 +34,4 @@
 - Untiy,Shader
 	- 🔗 [Unity小白的TA之路-Shader开发|图形渲染管线|URP|性能优化|图形渲染|PostProcessing (91maketop.github.io)](https://91maketop.github.io/ta/#/README)
 	- 🔗 [百人计划-HLSL常用函数 (qq.com)](https://docs.qq.com/slide/DUVdsTFBJUnpsUGVV)
+	- [Reference for HLSL - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference)
