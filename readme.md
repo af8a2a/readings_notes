@@ -20,8 +20,8 @@
 	- 🔗 [LearnOpenGL CN](https://learnopengl-cn.github.io/)
 	- 🔗 [Vulkan tutorial](https://vulkan-tutorial.com/)
 - Tool
-	- [Fractions Calculator (rapidtables.com)](https://www.rapidtables.com/calc/math/fractions-calculator.html)
-	- [An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/README.html)
+	- 🔗 [Fractions Calculator (rapidtables.com)](https://www.rapidtables.com/calc/math/fractions-calculator.html)
+	- 🔗 [An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/README.html)
 - Repositories
 	- 🔗 [SaschaWillems/Vulkan: C++ examples for the Vulkan graphics API (github.com)](https://github.com/SaschaWillems/Vulkan)
 	- 🔗 [Romantoscalion/Technical_Artist_Technotes: 个人的技术美术相关知识的学习笔记库 (github.com)](https://github.com/Romantoscalion/Technical_Artist_Technotes)
@@ -31,6 +31,7 @@
 	- 🔗 [关于本书 - Rust语言圣经(Rust Course)](https://course.rs/about-book.html)
 	- 🔗 [af8a2a/PiggySQL: Toy SQL database in Rust,written as a learning project (github.com)](https://github.com/af8a2a/PiggySQL)
 	- 🔗 [我的毕设](/Notes/我的毕设与Rust.md)
+	- 🔗 [af8a2a/raytracing-rs (github.com)](https://github.com/af8a2a/raytracing-rs
 - Untiy,Shader
 	- 🔗 [Unity小白的TA之路-Shader开发|图形渲染管线|URP|性能优化|图形渲染|PostProcessing (91maketop.github.io)](https://91maketop.github.io/ta/#/README)
 	- 🔗 [百人计划-HLSL常用函数 (qq.com)](https://docs.qq.com/slide/DUVdsTFBJUnpsUGVV)
