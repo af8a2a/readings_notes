@@ -19,6 +19,7 @@
 - Graphics API
 	- 🔗 [LearnOpenGL CN](https://learnopengl-cn.github.io/)
 	- 🔗 [Vulkan tutorial](https://vulkan-tutorial.com/)
+	- 🔗 [Vulkan in 30 minutes (renderdoc.org)](https://renderdoc.org/vulkan-in-30-minutes.html)
 - Tool
 	- 🔗 [Fractions Calculator (rapidtables.com)](https://www.rapidtables.com/calc/math/fractions-calculator.html)
 	- 🔗 [An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/README.html)
@@ -31,8 +32,8 @@
 	- 🔗 [关于本书 - Rust语言圣经(Rust Course)](https://course.rs/about-book.html)
 	- 🔗 [af8a2a/PiggySQL: Toy SQL database in Rust,written as a learning project (github.com)](https://github.com/af8a2a/PiggySQL)
 	- 🔗 [我的毕设](/Notes/我的毕设与Rust.md)
-	- 🔗 [af8a2a/raytracing-rs (github.com)](https://github.com/af8a2a/raytracing-rs
+	- 🔗 [af8a2a/raytracing-rs (github.com)](https://github.com/af8a2a/raytracing-rs)
 - Untiy,Shader
 	- 🔗 [Unity小白的TA之路-Shader开发|图形渲染管线|URP|性能优化|图形渲染|PostProcessing (91maketop.github.io)](https://91maketop.github.io/ta/#/README)
 	- 🔗 [百人计划-HLSL常用函数 (qq.com)](https://docs.qq.com/slide/DUVdsTFBJUnpsUGVV)
-	- [Reference for HLSL - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference)
+	- 🔗 [Reference for HLSL - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference)
