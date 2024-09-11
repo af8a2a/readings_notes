@@ -4,9 +4,8 @@
 
 
 
-- Math
+- Math & Rendering
 	- 📖 [Linear Math](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra/blob/main/README-zh-CN.md)
-- Rendering
 	- 📖 [Real Time Rendering4](https://github.com/Morakito/Real-Time-Rendering-4th-CN?tab=readme-ov-file)
 	- 📖 [Percentage-Closer Soft Shadows (nvidia.com)](https://developer.download.nvidia.com/shaderlibrary/docs/shadow_PCSS.pdf)
 	- 🔗 [Ray Tracing in One Weekend Series](https://raytracing.github.io/)
@@ -16,10 +15,12 @@
 	- 🔗 [百人计划-水体渲染](https://docs.qq.com/slide/DUWZaempMenVLbFph?u=595fa66de7d741d98dc3f0e42c829477)
 	- 📖 [Physically Based Rendering: From Theory to Implementation](https://pbr-book.org/4ed/contents)
 	- 📖 [GPU Gem](https://developer.nvidia.com/gpugems/gpugems/contributors)
+	- 🔗 [efficient gaussian-blur with linear sampling](https://www.rastergrid.com/blog/2010/09/efficient-gaussian-blur-with-linear-sampling/)
 - Graphics API
 	- 🔗 [LearnOpenGL CN](https://learnopengl-cn.github.io/)
 	- 🔗 [Vulkan tutorial](https://vulkan-tutorial.com/)
 	- 🔗 [Vulkan in 30 minutes (renderdoc.org)](https://renderdoc.org/vulkan-in-30-minutes.html)
+	- 🔗 [Tips and Tricks: Vulkan Dos and Don’ts | NVIDIA Technical Blog](https://developer.nvidia.com/blog/vulkan-dos-donts/) 
 - Tool
 	- 🔗 [Fractions Calculator (rapidtables.com)](https://www.rapidtables.com/calc/math/fractions-calculator.html)
 	- 🔗 [An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/README.html)
