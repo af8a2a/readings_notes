@@ -16,6 +16,8 @@
 	- 📖 [Physically Based Rendering: From Theory to Implementation](https://pbr-book.org/4ed/contents)
 	- 📖 [GPU Gem](https://developer.nvidia.com/gpugems/gpugems/contributors)
 	- 🔗 [efficient gaussian-blur with linear sampling](https://www.rastergrid.com/blog/2010/09/efficient-gaussian-blur-with-linear-sampling/)
+	- 🔗 [‌​​​​‬​‍​‬​​​‍​​‍‍‌​‍‬⁠​‬​​​⁠‌​‍​​​﻿﻿‍‍‬​﻿‍‬‌​‌​‍‬Importance Sampling PDFs (VNDF, Spherical Caps)](https://miusjun13qu.feishu.cn/docx/PerwdWePRoeDxaxz5k0cpHpVnWb)
+	- 🔗 [Unity 从DecalSystem创建PerObjectShadow](https://zhuanlan.zhihu.com/p/666545782)
 - Graphics API
 	- 🔗 [LearnOpenGL CN](https://learnopengl-cn.github.io/)
 	- 🔗 [Vulkan tutorial](https://vulkan-tutorial.com/)
