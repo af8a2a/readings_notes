@@ -18,6 +18,7 @@
 	- 🔗 [efficient gaussian-blur with linear sampling](https://www.rastergrid.com/blog/2010/09/efficient-gaussian-blur-with-linear-sampling/)
 	- 🔗 [‌​​​​‬​‍​‬​​​‍​​‍‍‌​‍‬⁠​‬​​​⁠‌​‍​​​﻿﻿‍‍‬​﻿‍‬‌​‌​‍‬Importance Sampling PDFs (VNDF, Spherical Caps)](https://miusjun13qu.feishu.cn/docx/PerwdWePRoeDxaxz5k0cpHpVnWb)
 	- 🔗 [Unity 从DecalSystem创建PerObjectShadow](https://zhuanlan.zhihu.com/p/666545782)
+	- 🎥 [Automated Testing of Shader Code(GDC 2024)](https://www.youtube.com/watch?v=X673tOi8pU8)
 - Graphics API
 	- 🔗 [LearnOpenGL CN](https://learnopengl-cn.github.io/)
 	- 🔗 [Vulkan tutorial](https://vulkan-tutorial.com/)
