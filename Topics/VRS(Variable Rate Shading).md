@@ -1,0 +1,3 @@
+- 🔗 [VRWorks - Variable Rate Shading (VRS) | NVIDIA Developer](https://developer.nvidia.com/vrworks/graphics/variablerateshading)
+- 🔗 [移动端 可变[速率/光栅化]渲染/VRR/VRS 在Unity下实现 – 苍白的茧](http://dreamfairy.cn/blog/?p=2025)
+- 🔗 [Vulkan/examples/variablerateshading at master · SaschaWillems/Vulkan](https://github.com/SaschaWillems/Vulkan/tree/master/examples/variablerateshading)
