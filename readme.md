@@ -43,3 +43,4 @@
 	- 🔗 [Reference for HLSL - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference)
 - Topics
 	- [ToneMapping](Topics/ToneMapping.md)
+	- [Variable Rate Shading](Topics/VRS.md)
