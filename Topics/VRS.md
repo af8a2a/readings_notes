@@ -1,3 +1,5 @@
 - 🔗 [VRWorks - Variable Rate Shading (VRS) | NVIDIA Developer](https://developer.nvidia.com/vrworks/graphics/variablerateshading)
+- 🔗 [FidelityFX Variable Shading 1.2 - FidelityFX SDK - AMD GPUOpen](https://gpuopen.com/manuals/fidelityfx_sdk/fidelityfx_sdk-page_techniques_variable-shading/#doxid-page-techniques-variable-shading)
 - 🔗 [移动端 可变[速率/光栅化]渲染/VRR/VRS 在Unity下实现 – 苍白的茧](http://dreamfairy.cn/blog/?p=2025)
 - 🔗 [Vulkan/examples/variablerateshading at master · SaschaWillems/Vulkan](https://github.com/SaschaWillems/Vulkan/tree/master/examples/variablerateshading)
+- 🔗 [可变速率着色 (VRS) - Win32 apps | Microsoft Learn](https://learn.microsoft.com/zh-cn/windows/win32/direct3d12/vrs#with-variable-rate-shading-vrs)
