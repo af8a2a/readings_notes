@@ -1,0 +1,4 @@
+- 🔗 [FidelityFX Combined Adaptive Compute Ambient Occlusion (CACAO) 1.4 - FidelityFX SDK - AMD GPUOpen](https://gpuopen.com/manuals/fidelityfx_sdk/fidelityfx_sdk-page_techniques_combined-adaptive-compute-ambient-occlusion/)
+- 🔗 [GameTechDev/ASSAO: Adaptive Screen Space Ambient Occlusion](https://github.com/GameTechDev/ASSAO)
+- 📖 [GameTechDev/XeGTAO: An implementation of [Jimenez et al., 2016] Ground Truth Ambient Occlusion, MIT license](https://github.com/GameTechDev/XeGTAO)
+- 🔗 [Practical Real-Time Strategies for Accurate Indirect Occlusion](https://www.activision.com/cdn/research/Practical_Real_Time_Strategies_for_Accurate_Indirect_Occlusion_NEW%20VERSION_COLOR.pdf)
