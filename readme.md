@@ -44,3 +44,6 @@
 - Topics
 	- [ToneMapping](Topics/ToneMapping.md)
 	- [Variable Rate Shading](Topics/VRS.md)
+	- [FidelityFX](Topics/FidelityFX.md)
+	- [SSAO](Topics/SSAO.md)
+	- [ScreenSpaceRaytracing](Topics/ScreenSpaceRaytracing.md)
