@@ -1,0 +1,2 @@
+- 📖 [Persson_LowLevelThinking.pdf](https://www.humus.name/Articles/Persson_LowLevelThinking.pdf)
+- 🔗 [‌​​‬​﻿​​​‬​​‬‍​﻿​​​​​‬‬​﻿⁠​‍​﻿‌⁠‌‬​​⁠‍​​﻿‬​​‬​​​​﻿Manual-Shader规范 及 优化 - 飞书云文档](https://miusjun13qu.feishu.cn/docx/C7UAd1pa3oMzKyxEgVecWRP5n7g)
