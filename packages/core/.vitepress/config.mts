@@ -19,7 +19,7 @@ export default defineConfig({
       {
         text: 'Posts',
         items: [
-          // Add your posts here
+          { text: 'Image Denoising', link: '/posts/image-denoising' }
         ]
       }
     ],
