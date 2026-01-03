@@ -1,0 +1,6 @@
+{
+  "name": "@blog/content",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Markdown content and images for the blog"
+}

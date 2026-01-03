@@ -1,0 +1,12 @@
+{
+  "name": "blog",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @blog/core",
+    "build": "npm run build -w @blog/core",
+    "preview": "npm run preview -w @blog/core"
+  }
+}
