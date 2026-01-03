@@ -21,7 +21,7 @@ export default defineConfig({
             items: [
                   {
                         text: 'Image Denoising',
-                        link: '/posts/image-denoising'
+                        link: '/posts/image-denoising/'
                   }
             ]
       }

@@ -5,8 +5,8 @@ Image denoising removes noise from images while preserving important details.
 ## Comparison
 
 <ImageCompare
-  before="/images/noisy.png"
-  after="/images/denoised.png"
+  before="./noisy.png"
+  after="./denoised.png"
   beforeLabel="Noisy"
   afterLabel="Denoised"
 />

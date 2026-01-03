@@ -22,8 +22,8 @@ function extractTitle(filePath) {
   const h1Match = content.match(/^#\s+(.+)$/m)
   if (h1Match) return h1Match[1].trim()
 
-  // Fallback to filename
-  return path.basename(filePath, '.md')
+  // Fallback to folder/filename
+  return path.basename(path.dirname(filePath))
     .replace(/-/g, ' ')
     .replace(/\b\w/g, c => c.toUpperCase())
 }
@@ -39,7 +39,27 @@ function extractOrder(filePath) {
   return 999
 }
 
-// Scan posts directory recursively
+// Check if directory is a post folder (has index.md, no other .md files)
+function isPostFolder(dir) {
+  const indexPath = path.join(dir, 'index.md')
+  if (!fs.existsSync(indexPath)) return false
+
+  const entries = fs.readdirSync(dir, { withFileTypes: true })
+  for (const entry of entries) {
+    // Has other markdown files = section folder
+    if (entry.isFile() && entry.name.endsWith('.md') && entry.name !== 'index.md') {
+      return false
+    }
+    // Has subdirectory with index.md = section folder
+    if (entry.isDirectory()) {
+      const subIndex = path.join(dir, entry.name, 'index.md')
+      if (fs.existsSync(subIndex)) return false
+    }
+  }
+  return true
+}
+
+// Scan posts directory
 function scanPosts(dir, basePath = '/posts') {
   const items = []
 
@@ -56,25 +76,40 @@ function scanPosts(dir, basePath = '/posts') {
     const linkPath = `${basePath}/${entry.name.replace(/\.md$/, '')}`
 
     if (entry.isDirectory()) {
-      // Check for index.md in subdirectory
       const indexPath = path.join(fullPath, 'index.md')
       const hasIndex = fs.existsSync(indexPath)
 
-      const children = scanPosts(fullPath, linkPath)
-      if (children.length > 0 || hasIndex) {
-        const title = hasIndex
-          ? extractTitle(indexPath)
-          : entry.name.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
-
+      if (isPostFolder(fullPath)) {
+        // Single post with co-located images
         items.push({
-          text: title,
-          collapsed: false,
-          items: children,
-          link: hasIndex ? linkPath + '/' : undefined,
-          order: hasIndex ? extractOrder(indexPath) : 999
+          text: extractTitle(indexPath),
+          link: linkPath + '/',
+          order: extractOrder(indexPath)
         })
+      } else if (hasIndex) {
+        // Section with children
+        const children = scanPosts(fullPath, linkPath)
+        items.push({
+          text: extractTitle(indexPath),
+          collapsed: false,
+          link: linkPath + '/',
+          items: children,
+          order: extractOrder(indexPath)
+        })
+      } else {
+        // Section without index
+        const children = scanPosts(fullPath, linkPath)
+        if (children.length > 0) {
+          items.push({
+            text: entry.name.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
+            collapsed: false,
+            items: children,
+            order: 999
+          })
+        }
       }
     } else if (entry.name.endsWith('.md') && entry.name !== 'index.md') {
+      // Standalone markdown file
       items.push({
         text: extractTitle(fullPath),
         link: linkPath,

@@ -29,8 +29,10 @@ packages/
 │       └── sync-content.js       # Auto-generates sidebar from posts
 └── content/                      # Markdown content and assets
     ├── index.md                  # Homepage
-    ├── posts/                    # Blog posts
-    └── images/                   # Image assets
+    └── posts/
+        └── my-post/              # Each post is a folder
+            ├── index.md          # Post content
+            └── image.png         # Co-located images
 ```
 
 ## Architecture Notes
@@ -38,18 +40,20 @@ packages/
 - **Monorepo with npm workspaces**: `@blog/core` (VitePress) and `@blog/content` (markdown/images)
 - **srcDir**: Core's VitePress config points to `../content` as source directory
 - **Content sync**: `npm run sync` scans posts and updates sidebar config automatically
+- **Co-located images**: Each post folder contains its own images
 - Static site only, no SSR
 
 ## Adding Content
 
-1. Add markdown files to `packages/content/posts/`
-2. Add images to `packages/content/images/`
-3. Run `npm run sync` to update sidebar
-4. Optionally use frontmatter `order: N` to control sort order
+1. Create folder in `packages/content/posts/my-post/`
+2. Add `index.md` and images in same folder
+3. Reference images with relative paths: `./image.png`
+4. Run `npm run sync` to update sidebar
+5. Optionally use frontmatter `order: N` to control sort order
 
 ## Custom Components
 
 Use in markdown:
 ```md
-<ImageCompare before="/images/a.png" after="/images/b.png" />
+<ImageCompare before="./noisy.png" after="./denoised.png" />
 ```
