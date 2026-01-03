@@ -17,12 +17,15 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Posts',
-        items: [
-          { text: 'Image Denoising', link: '/posts/image-denoising' }
-        ]
+            text: 'Posts',
+            items: [
+                  {
+                        text: 'Image Denoising',
+                        link: '/posts/image-denoising'
+                  }
+            ]
       }
-    ],
+],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com' }

@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "dev": "npm run dev -w @blog/core",
-    "build": "npm run build -w @blog/core",
-    "preview": "npm run preview -w @blog/core"
+    "build": "npm run sync && npm run build -w @blog/core",
+    "preview": "npm run preview -w @blog/core",
+    "sync": "npm run sync -w @blog/core"
   }
 }
