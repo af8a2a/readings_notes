@@ -1,0 +1,10 @@
+---
+title: "WorkGraphs"
+---
+
+# WorkGraphs
+
+- 📖 [Advancing GPU-Driven Rendering with Work Graphs in Direct3D 12 | NVIDIA Technical Blog](https://developer.nvidia.com/blog/advancing-gpu-driven-rendering-with-work-graphs-in-direct3d-12/)
+- 📖  [Work Graphs in Direct3D 12: A Case Study of Deferred Shading | NVIDIA Technical Blog](https://developer.nvidia.com/blog/work-graphs-in-direct3d-12-a-case-study-of-deferred-shading/)
+- 🔗 [GPUOpen-LibrariesAndSDKs/WorkGraphPlayground: A DirectX12-based C++-application that allows graphics programmers to learn and experiment with the new Work Graphs feature using HLSL shaders. In runs on Windows 10 and Windows 11 systems.](https://github.com/GPUOpen-LibrariesAndSDKs/WorkGraphPlayground)
+- 
