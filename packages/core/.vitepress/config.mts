@@ -5,6 +5,9 @@ export default defineConfig({
   title: "Reading&Note",
   description: "Vivid Rendering",
 
+  // Base path for GitHub Pages (repo name)
+  base: '/readings_notes/',
+
   // Content is symlinked/referenced from ../content
   srcDir: '../content',
 

@@ -39,7 +39,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://af8a2a.github.io/
+      url: https://af8a2a.github.io/readings_notes/
     needs: build
     runs-on: ubuntu-latest
     steps:
