@@ -39,7 +39,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://af8a2a.github.io/readings_notes/
+      url: ${{steps.deployment.outputs.page_url}}
     needs: build
     runs-on: ubuntu-latest
     steps:
