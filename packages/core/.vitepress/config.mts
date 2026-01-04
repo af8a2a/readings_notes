@@ -20,116 +20,123 @@ export default defineConfig({
             text: 'Posts',
             items: [
                   {
-                        text: 'Advanced PostProcessing',
-                        link: '/posts/advanced-postprocessing/'
-                  },
-                  {
-                        text: 'Anti-Aliasing',
-                        link: '/posts/anti-aliasing/'
-                  },
-                  {
-                        text: 'Bindless',
-                        link: '/posts/bindless/'
-                  },
-                  {
-                        text: 'C++',
-                        link: '/posts/c/'
-                  },
-                  {
-                        text: 'ComputeShader',
-                        link: '/posts/computeshader/'
-                  },
-                  {
-                        text: 'Denoiser & Accumulation',
-                        link: '/posts/denoiser-and-accumulation/'
-                  },
-                  {
-                        text: 'DepthOfField',
-                        link: '/posts/depthoffield/'
-                  },
-                  {
-                        text: 'FavoritesBlog',
-                        link: '/posts/favoritesblog/'
-                  },
-                  {
-                        text: 'FidelityFX',
-                        link: '/posts/fidelityfx/'
-                  },
-                  {
-                        text: 'Fluid & Volumetric',
-                        link: '/posts/fluid-and-volumetric/'
-                  },
-                  {
-                        text: 'GlobalIllumination',
-                        link: '/posts/globalillumination/'
-                  },
-                  {
-                        text: 'GraphicsAPI',
-                        link: '/posts/graphicsapi/'
-                  },
-                  {
                         text: 'Image Denoising',
                         link: '/posts/image-denoising/'
                   },
                   {
-                        text: 'Lighting',
-                        link: '/posts/lighting/'
-                  },
-                  {
-                        text: 'LTC',
-                        link: '/posts/ltc/'
-                  },
-                  {
-                        text: 'Meshlet & MeshShader',
-                        link: '/posts/meshlet-and-meshshader/'
-                  },
-                  {
-                        text: 'Misc',
-                        link: '/posts/misc/'
-                  },
-                  {
-                        text: 'Performance',
-                        link: '/posts/performance/'
-                  },
-                  {
-                        text: 'PhysicallyBasedRendering',
-                        link: '/posts/physicallybasedrendering/'
-                  },
-                  {
-                        text: 'PostProcessingEffect',
-                        link: '/posts/postprocessingeffect/'
-                  },
-                  {
-                        text: 'RenderGraph',
-                        link: '/posts/rendergraph/'
-                  },
-                  {
-                        text: 'RTX',
-                        link: '/posts/rtx/'
-                  },
-                  {
-                        text: 'ScreenSpaceRaytracing',
-                        link: '/posts/screenspaceraytracing/'
-                  },
-                  {
-                        text: 'Shadow',
-                        link: '/posts/shadow/'
-                  },
-                  {
-                        text: 'SSAO',
-                        link: '/posts/ssao/'
-                  },
-                  {
-                        text: 'ToneMapping  &  ColorGrading',
-                        link: '/posts/tonemapping--and--colorgrading/'
-                  },
-                  {
-                        text: 'VRS',
-                        link: '/posts/vrs/'
-                  },
-                  {
-                        text: 'WorkGraphs',
-                        link: '/posts/workgraphs/'
+                        text: 'Topics',
+                        collapsed: false,
+                        link: '/posts/Topic/',
+                        items: [
+                              {
+                                    text: 'Advanced PostProcessing',
+                                    link: '/posts/Topic/advanced-postprocessing/'
+                              },
+                              {
+                                    text: 'Anti-Aliasing',
+                                    link: '/posts/Topic/anti-aliasing/'
+                              },
+                              {
+                                    text: 'Bindless',
+                                    link: '/posts/Topic/bindless/'
+                              },
+                              {
+                                    text: 'C++',
+                                    link: '/posts/Topic/c/'
+                              },
+                              {
+                                    text: 'ComputeShader',
+                                    link: '/posts/Topic/computeshader/'
+                              },
+                              {
+                                    text: 'Denoiser & Accumulation',
+                                    link: '/posts/Topic/denoiser-and-accumulation/'
+                              },
+                              {
+                                    text: 'DepthOfField',
+                                    link: '/posts/Topic/depthoffield/'
+                              },
+                              {
+                                    text: 'FavoritesBlog',
+                                    link: '/posts/Topic/favoritesblog/'
+                              },
+                              {
+                                    text: 'FidelityFX',
+                                    link: '/posts/Topic/fidelityfx/'
+                              },
+                              {
+                                    text: 'Fluid & Volumetric',
+                                    link: '/posts/Topic/fluid-and-volumetric/'
+                              },
+                              {
+                                    text: 'GlobalIllumination',
+                                    link: '/posts/Topic/globalillumination/'
+                              },
+                              {
+                                    text: 'GraphicsAPI',
+                                    link: '/posts/Topic/graphicsapi/'
+                              },
+                              {
+                                    text: 'Lighting',
+                                    link: '/posts/Topic/lighting/'
+                              },
+                              {
+                                    text: 'LTC',
+                                    link: '/posts/Topic/ltc/'
+                              },
+                              {
+                                    text: 'Meshlet & MeshShader',
+                                    link: '/posts/Topic/meshlet-and-meshshader/'
+                              },
+                              {
+                                    text: 'Misc',
+                                    link: '/posts/Topic/misc/'
+                              },
+                              {
+                                    text: 'Performance',
+                                    link: '/posts/Topic/performance/'
+                              },
+                              {
+                                    text: 'PhysicallyBasedRendering',
+                                    link: '/posts/Topic/physicallybasedrendering/'
+                              },
+                              {
+                                    text: 'PostProcessingEffect',
+                                    link: '/posts/Topic/postprocessingeffect/'
+                              },
+                              {
+                                    text: 'RenderGraph',
+                                    link: '/posts/Topic/rendergraph/'
+                              },
+                              {
+                                    text: 'RTX',
+                                    link: '/posts/Topic/rtx/'
+                              },
+                              {
+                                    text: 'ScreenSpaceRaytracing',
+                                    link: '/posts/Topic/screenspaceraytracing/'
+                              },
+                              {
+                                    text: 'Shadow',
+                                    link: '/posts/Topic/shadow/'
+                              },
+                              {
+                                    text: 'SSAO',
+                                    link: '/posts/Topic/ssao/'
+                              },
+                              {
+                                    text: 'ToneMapping  &  ColorGrading',
+                                    link: '/posts/Topic/tonemapping--and--colorgrading/'
+                              },
+                              {
+                                    text: 'VRS',
+                                    link: '/posts/Topic/vrs/'
+                              },
+                              {
+                                    text: 'WorkGraphs',
+                                    link: '/posts/Topic/workgraphs/'
+                              }
+                        ]
                   }
             ]
       }
