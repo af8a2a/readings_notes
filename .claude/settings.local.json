@@ -5,7 +5,8 @@
       "Bash(mkdir:*)",
       "Bash(for d in advanced-postprocessing anti-aliasing bindless c computeshader denoiser-and-accumulation depthoffield favoritesblog fidelityfx fluid-and-volumetric globalillumination graphicsapi lighting ltc meshlet-and-meshshader misc performance physicallybasedrendering postprocessingeffect rendergraph rtx screenspaceraytracing shadow ssao tonemapping--and--colorgrading vrs workgraphs)",
       "Bash(do mv \"$d\" Topic/)",
-      "Bash(done)"
+      "Bash(done)",
+      "WebFetch(domain:vitepress.dev)"
     ]
   }
 }

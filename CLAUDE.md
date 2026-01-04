@@ -29,10 +29,12 @@ packages/
 │       └── sync-content.js       # Auto-generates sidebar from posts
 └── content/                      # Markdown content and assets
     ├── index.md                  # Homepage
+    ├── public/                   # Static assets (copied as-is)
+    │   └── images/               # Images for Vue components
     └── posts/
         └── my-post/              # Each post is a folder
             ├── index.md          # Post content
-            └── image.png         # Co-located images
+            └── image.png         # Co-located images (markdown only)
 ```
 
 ## Architecture Notes
@@ -40,7 +42,7 @@ packages/
 - **Monorepo with npm workspaces**: `@blog/core` (VitePress) and `@blog/content` (markdown/images)
 - **srcDir**: Core's VitePress config points to `../content` as source directory
 - **Content sync**: `npm run sync` scans posts and updates sidebar config automatically
-- **Co-located images**: Each post folder contains its own images
+- **Co-located images**: Each post folder contains its own images for markdown use
 - Static site only, no SSR
 
 ## Adding Content
@@ -51,9 +53,23 @@ packages/
 4. Run `npm run sync` to update sidebar
 5. Optionally use frontmatter `order: N` to control sort order
 
+## Image Handling
+
+**Markdown images** (co-located, relative paths):
+```md
+![screenshot](./image.png)
+```
+
+**Vue component images** (public folder, absolute paths):
+- Place images in `packages/content/public/images/<post-name>/`
+- Reference with absolute path (base URL added automatically):
+```md
+<ImageCompare before="/images/my-post/before.png" after="/images/my-post/after.png" />
+```
+
 ## Custom Components
 
 Use in markdown:
 ```md
-<ImageCompare before="./noisy.png" after="./denoised.png" />
+<ImageCompare before="/images/my-post/noisy.png" after="/images/my-post/denoised.png" />
 ```

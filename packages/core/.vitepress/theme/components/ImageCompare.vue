@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue'
+import { withBase } from 'vitepress'
 
 const props = defineProps({
   before: { type: String, required: true },
@@ -13,6 +14,10 @@ const isDragging = ref(false)
 const container = ref(null)
 
 const clipPath = computed(() => `inset(0 ${100 - position.value}% 0 0)`)
+
+// Resolve paths with base URL
+const beforeSrc = computed(() => withBase(props.before))
+const afterSrc = computed(() => withBase(props.after))
 
 function updatePosition(e) {
   if (!container.value) return
@@ -48,12 +53,12 @@ function stopDrag() {
     @touchend="stopDrag"
   >
     <!-- After image (bottom layer) -->
-    <img class="compare-image" :src="after" :alt="afterLabel" />
+    <img class="compare-image" :src="afterSrc" :alt="afterLabel" />
 
     <!-- Before image (top layer, clipped) -->
     <img
       class="compare-image before-image"
-      :src="before"
+      :src="beforeSrc"
       :alt="beforeLabel"
       :style="{ clipPath }"
     />
