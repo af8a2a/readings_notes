@@ -76,6 +76,10 @@ export default defineConfig({
                                     link: '/posts/Topic/globalillumination/'
                               },
                               {
+                                    text: 'Graphics Asset',
+                                    link: '/posts/Topic/graphics-asset/'
+                              },
+                              {
                                     text: 'GraphicsAPI',
                                     link: '/posts/Topic/graphicsapi/'
                               },
